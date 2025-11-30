@@ -19,7 +19,7 @@ class User(db.Model):
             # do not serialize the password, its a security breach
         }
 
-     @classmethod
+    @classmethod
     def create_user(cls, data):
         try:
             new_user = cls(**data)
